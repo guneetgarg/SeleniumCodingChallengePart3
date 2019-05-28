@@ -47,14 +47,10 @@ public class TestCase1 extends BaseTest {
 
         CasePage casePage = CasePage.using(driver);
         casePage.clickAddCaseBtn();
-        Thread.sleep(5000);
 
-        casePage.caseRelatesTo.sendKeys("Guneet Garg");
-        Thread.sleep(5000);
-
-        casePage.caseRelatesTo.sendKeys(Keys.ARROW_DOWN);
-        casePage.caseRelatesTo.sendKeys(Keys.ENTER);
-
+        casePage.setCaseRelatesTo("Guneet Garg");
+        casePage.setName("Guneet Garg");
+        casePage.clickSaveBtn();
 
 
     }

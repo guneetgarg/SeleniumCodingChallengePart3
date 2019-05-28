@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5eb6fc6-048a-4402-b0e5-cd39e418c15a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/CasePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/pages/CasePage.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/TestCase1.java" afterPath="$PROJECT_DIR$/src/test/java/com/TestCase1.java" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TestCase1.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,12 +22,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestCase1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestCase1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/TestCase1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="55" column="52" lean-forward="true" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+            <state relative-caret-position="442">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountSettingsPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CasePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/CasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1413#1414#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,7 +94,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pages/DashBoard.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCase1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/util/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/util/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pages/PeopleOrganisationsPage.java" />
@@ -77,9 +104,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/TestCase2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/util/DataProviderClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pages/casePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pages/CasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pages/DashBoardPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pages/CasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/TestCase1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java" />
       </list>
     </option>
   </component>
@@ -436,9 +464,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCase1 - 2019.05.27 at 22h 58m 55s.xml">
-      <configuration name="TestCase1" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestCase1 - 2019.05.27 at 23h 01m 15s.xml">
       <configuration name="TestCase1" configurationId="TestNG" />
     </history-entry>
@@ -466,6 +491,9 @@
     <history-entry file="TestCase1 - 2019.05.28 at 14h 17m 20s.xml">
       <configuration name="TestCase1" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestCase1 - 2019.05.28 at 14h 31m 57s.xml">
+      <configuration name="TestCase1" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="669" y="-780" width="1382" height="784" extended-state="6" />
@@ -479,7 +507,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43803057" sideWeight="0.51134646" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41017488" sideWeight="0.48865354" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41017488" sideWeight="0.48865354" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767403" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -724,31 +752,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="25" column="0" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="25" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/CasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,10 +805,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/CasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/TestCase1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="55" column="52" lean-forward="true" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+        <state relative-caret-position="442">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/AccountSettingsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="28" />
           <folding />
         </state>
       </provider>

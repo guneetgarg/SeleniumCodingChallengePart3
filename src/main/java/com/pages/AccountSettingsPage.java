@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class AccountSettingsPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     private AccountSettingsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);

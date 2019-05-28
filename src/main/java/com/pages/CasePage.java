@@ -1,5 +1,6 @@
 package com.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ public class CasePage {
     private WebElement addCaseBtn;
 
     @FindBy(id = "partySearch")
-    public WebElement caseRelatesTo;
+    private WebElement caseRelatesTo;
 
     @FindBy(id = "caseNameDecorate:name")
     private WebElement name;
@@ -35,6 +36,26 @@ public class CasePage {
 
     public void clickAddCaseBtn() {
         addCaseBtn.click();
+    }
+
+    public void setCaseRelatesTo(String str) {
+        caseRelatesTo.sendKeys(str);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        caseRelatesTo.sendKeys(Keys.ARROW_DOWN);
+        caseRelatesTo.sendKeys(Keys.ENTER);
+    }
+
+    public void setName(String str) {
+        name.sendKeys(str);
+    }
+
+    public void clickSaveBtn() {
+        saveBtn.click();
     }
 
 }
