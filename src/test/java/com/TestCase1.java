@@ -4,6 +4,7 @@ import com.pages.*;
 import com.util.ActionWrapper;
 import com.util.BaseTest;
 import com.util.DataProviderClass;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 public class TestCase1 extends BaseTest {
@@ -14,6 +15,9 @@ public class TestCase1 extends BaseTest {
     @Test(dataProvider = "getNewPersondata", dataProviderClass = DataProviderClass.class)
     public void aa(String title, String firstName, String lastName, String company, String phone, String email) throws InterruptedException {
         driver.get(actionWrapper.readProprtyFile("capsulecrm_url"));
+
+        Thread.sleep(5000);
+
         LoginPage
                 .using(driver)
                 .setUsername(actionWrapper.readProprtyFile("capsulecrm_username"))
@@ -46,7 +50,11 @@ public class TestCase1 extends BaseTest {
         Thread.sleep(5000);
 
         casePage.caseRelatesTo.sendKeys("Guneet Garg");
-        casePage.caseRelatesTo.click();
+        Thread.sleep(5000);
+
+        casePage.caseRelatesTo.sendKeys(Keys.ARROW_DOWN);
+        casePage.caseRelatesTo.sendKeys(Keys.ENTER);
+
 
 
     }
