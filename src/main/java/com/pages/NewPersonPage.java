@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NewPersonPage {
 
-    @FindBy(id = "party:fnDecorate:fn")
+   /* @FindBy(id = "party:fnDecorate:fn")
     private WebElement firstName;
 
     @FindBy(id = "party:j_id108:j_id116")
@@ -83,5 +83,5 @@ public class NewPersonPage {
 
     public void clickSaveBtn() {
         saveBtn.click();
-    }
+    }*/
 }

@@ -8,7 +8,28 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class ActionWrapper {
+
     Logger logger = Logger.getLogger(ActionWrapper.class);
+
+
+    private static ActionWrapper instance;
+
+    private ActionWrapper() {
+    }
+
+    //static block initialization for exception handling
+    static {
+        try {
+            instance = new ActionWrapper();
+        } catch (Exception e) {
+            throw new RuntimeException("Exception occured in creating singleton instance");
+        }
+    }
+
+    public static ActionWrapper getInstance() {
+        return instance;
+    }
+
 
     public String readProprtyFile(String key) {
         try (InputStream input = ActionWrapper.class.getClassLoader().getResourceAsStream("config.properties")) {

@@ -1,11 +1,27 @@
 package com.pages;
 
+import com.util.ActionWrapper;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+
+    Logger logger = Logger.getLogger(LoginPage.class);
+
+
+    @FindBy(xpath = "//a[@href='/parties' and @aria-label='People & Organisations']")
+    public WebElement peopleOrganisationsMenu;
+
+    public void clickPeopleOrganisationsMenu() {
+        peopleOrganisationsMenu.click();
+    }
+
+
+
+
 
     @FindBy(id = "login:usernameDecorate:username")
     private WebElement userName;

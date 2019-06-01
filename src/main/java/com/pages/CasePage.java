@@ -23,8 +23,26 @@ public class CasePage {
     @FindBy(id = "tagsDecorate:tagComboBox")
     private WebElement tag;
 
+    @FindBy(xpath = "//input[@class='btn-secondary btn-small addTagButton']")
+    private WebElement addTagBtn;
+
     @FindBy(id = "save")
     private WebElement saveBtn;
+
+
+    @FindBy(xpath = "//div[@class='kase-summary-status float-left']/span")
+    private WebElement caseStatus;
+
+    @FindBy(xpath = "//div[@class='entity-details-title']")
+    private WebElement caseTitle;
+
+
+
+    @FindBy(xpath = "//div[@class='entity-details-owner']")
+    private WebElement caseOwner;
+
+
+
 
     private CasePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -37,6 +55,17 @@ public class CasePage {
     public void clickAddCaseBtn() {
         addCaseBtn.click();
     }
+
+
+
+
+
+
+
+
+
+
+
 
     public void setCaseRelatesTo(String str) {
         caseRelatesTo.sendKeys(str);
@@ -56,6 +85,28 @@ public class CasePage {
 
     public void clickSaveBtn() {
         saveBtn.click();
+    }
+    public void setDescription(String str){
+        description.sendKeys(str);
+    }
+
+    public void setTag(String str){
+        tag.sendKeys(str);
+    }
+    public void clickAddTagBtn(){
+        addTagBtn.click();
+    }
+
+    public String getCaseStatus(){
+       return caseStatus.getText();
+    }
+
+    public String getCaseTitle(){
+        return  caseTitle.getText();
+    }
+
+    public String getCaseOwner(){
+        return caseOwner.getText();
     }
 
 }

@@ -7,17 +7,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DashBoardPage {
 
-    @FindBy(xpath = "//a[@id='ember18' and @aria-label='People & Organisations']")
+    @FindBy(xpath = "//a[@href='/parties' and @aria-label='People & Organisations']")
     private WebElement peopleOrganisationsMenu;
 
     @FindBy(xpath = "//a[@href='/cases']")
     private WebElement casesMenu;
 
-    @FindBy(xpath = "//li[@class='menu']")
-    private WebElement menu;
+    @FindBy(id = "ember68")
+    public WebElement accountDrpDown;
 
-    @FindBy(xpath = "//li/a[text()='Account Settings']")
-    private WebElement accountSettingsMenu;
+    @FindBy(xpath = "//a[@href='/settings'] ")
+    public WebElement accountSettingsMenu;
 
 
     private DashBoardPage(WebDriver driver) {
@@ -29,6 +29,7 @@ public class DashBoardPage {
     }
 
     public void clickPeopleOrganisationsMenu() {
+
         peopleOrganisationsMenu.click();
     }
 

@@ -5,53 +5,61 @@ import com.util.ActionWrapper;
 import com.util.BaseTest;
 import com.util.DataProviderClass;
 import org.openqa.selenium.Keys;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCase1 extends BaseTest {
 
-    ActionWrapper actionWrapper = new ActionWrapper();
+
+    DashBoardPage dashBoardPage;
+    PeopleOrganisationsPage peopleOrganisations;
 
 
     @Test(dataProvider = "getNewPersondata", dataProviderClass = DataProviderClass.class)
     public void aa(String title, String firstName, String lastName, String company, String phone, String email) throws InterruptedException {
-        driver.get(actionWrapper.readProprtyFile("capsulecrm_url"));
-
-        Thread.sleep(5000);
 
         LoginPage
                 .using(driver)
-                .setUsername(actionWrapper.readProprtyFile("capsulecrm_username"))
-                .setPassword(actionWrapper.readProprtyFile("capsulecrm_password"))
+                .setUsername(ActionWrapper.getInstance().readProprtyFile("capsulecrm_username"))
+                .setPassword(ActionWrapper.getInstance().readProprtyFile("capsulecrm_password"))
                 .login();
 
-        DashBoardPage
-                .using(driver)
-                .clickPeopleOrganisationsMenu();
+        dashBoardPage = DashBoardPage.using(driver);
+        dashBoardPage.clickPeopleOrganisationsMenu();
 
-        PeopleOrganisationsPage.using(driver).clickAddPerson();
+        peopleOrganisations = PeopleOrganisationsPage.using(driver);
+        peopleOrganisations.clickAddPerson();
 
-        NewPersonPage page = NewPersonPage
-                .using(driver);
+        peopleOrganisations.setFirstName(firstName);
+        peopleOrganisations.setLastName(lastName);
+        peopleOrganisations.setOrganisation(company);
+        peopleOrganisations.setPhoneNumber(phone);
+        peopleOrganisations.setEmail(email);
+        peopleOrganisations.clickSaveBtn();
 
-        page.setFirstName(firstName);
-        page.setLastName(lastName);
-        page.setOrganisation(company);
-        page.setPhoneNumber(phone);
-        page.setEmail(email);
-        page.clickSaveBtn();
+        dashBoardPage.clickPeopleOrganisationsMenu();
 
-        Thread.sleep(5000);
-        DashBoardPage.using(driver).clickCasesMenu();
 
         Thread.sleep(5000);
-
+        System.out.println(peopleOrganisations.validatePersonCreated(firstName, lastName));
+        dashBoardPage.clickCasesMenu();
         CasePage casePage = CasePage.using(driver);
         casePage.clickAddCaseBtn();
 
-        casePage.setCaseRelatesTo("Guneet Garg");
-        casePage.setName("Guneet Garg");
+
+        Thread.sleep(5000);
+
+
+        casePage.setCaseRelatesTo(firstName + " " + lastName);
+        casePage.setName("test lost cartest");
+        casePage.setDescription("test");
+        casePage.setTag("car");
+        casePage.clickAddTagBtn();
         casePage.clickSaveBtn();
 
+        Assert.assertEquals(casePage.getCaseStatus(), "Open", "Status of new case should be open");
+        Assert.assertEquals(casePage.getCaseTitle(), "test lost cartest", "case title should match");
+        Assert.assertTrue(casePage.getCaseOwner().contains(ActionWrapper.getInstance().readProprtyFile("capsulecrm_owner")), "Owner Name who created Case should match");
 
     }
 }
