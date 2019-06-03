@@ -252,3 +252,78 @@
 2019-06-03 10:38:02 INFO  AccountSettingsPage:235 - Clicking Menu Tracks Locator is:  //ul/li/a[normalize-space(text()='Tracks')]
 2019-06-03 10:43:26 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_url
 2019-06-03 10:43:26 INFO  ActionWrapper:25 - Value is: https://guneet.capsulecrm.com/login
+2019-06-03 10:43:55 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_username
+2019-06-03 10:43:55 INFO  ActionWrapper:25 - Value is: guneetgarg
+2019-06-03 10:43:55 INFO  LoginPage:32 - Entering UserName in TextBox: guneetgarg
+2019-06-03 10:43:56 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_password
+2019-06-03 10:43:56 INFO  ActionWrapper:25 - Value is: cAQbBgMNC3XiqXy
+2019-06-03 10:43:56 INFO  LoginPage:38 - Entering Password in TextBox: cAQbBgMNC3XiqXy
+2019-06-03 10:43:56 INFO  LoginPage:44 - Clicking Login Button
+2019-06-03 10:43:59 INFO  DashBoardPage:49 - Navigating to Account Setting Page
+2019-06-03 10:44:00 INFO  AccountSettingsPage:246 - Clicking Menu Account Locator is:  //ul/li/a[normalize-space(text()='Account')]
+2019-06-03 10:44:01 INFO  AccountSettingsPage:246 - Clicking Menu Invoices Locator is:  //ul/li/a[normalize-space(text()='Invoices')]
+2019-06-03 10:44:03 INFO  AccountSettingsPage:246 - Clicking Menu Export Locator is:  //ul/li/a[normalize-space(text()='Export')]
+2019-06-03 10:44:04 INFO  AccountSettingsPage:246 - Clicking Menu Appearance Locator is:  //ul/li/a[normalize-space(text()='Appearance')]
+2019-06-03 10:44:06 INFO  AccountSettingsPage:246 - Clicking Menu Mail Drop Box Locator is:  //ul/li/a[normalize-space(text()='Mail Drop Box')]
+2019-06-03 10:44:07 INFO  AccountSettingsPage:246 - Clicking Menu Users Locator is:  //ul/li/a[normalize-space(text()='Users')]
+2019-06-03 10:44:11 INFO  AccountSettingsPage:246 - Clicking Menu Opportunities Locator is:  //ul/li/a[normalize-space(text()='Opportunities')]
+2019-06-03 10:44:16 INFO  AccountSettingsPage:246 - Clicking Menu Tracks Locator is:  //ul/li/a[normalize-space(text()='Tracks')]
+2019-06-03 11:15:21 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_url
+2019-06-03 11:15:21 INFO  ActionWrapper:25 - Value is: https://guneet.capsulecrm.com/login
+2019-06-03 11:15:49 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_username
+2019-06-03 11:15:49 INFO  ActionWrapper:25 - Value is: guneetgarg
+2019-06-03 11:15:49 INFO  LoginPage:32 - Entering UserName in TextBox: guneetgarg
+2019-06-03 11:15:49 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_password
+2019-06-03 11:15:49 INFO  ActionWrapper:25 - Value is: cAQbBgMNC3XiqXy
+2019-06-03 11:15:49 INFO  LoginPage:38 - Entering Password in TextBox: cAQbBgMNC3XiqXy
+2019-06-03 11:15:50 INFO  LoginPage:44 - Clicking Login Button
+2019-06-03 11:15:53 INFO  DashBoardPage:49 - Navigating to Account Setting Page
+2019-06-03 11:15:55 INFO  AccountSettingsPage:246 - Clicking Menu Account Locator is:  //ul/li/a[normalize-space(text()='Account')]
+2019-06-03 11:15:56 INFO  AccountSettingsPage:246 - Clicking Menu Invoices Locator is:  //ul/li/a[normalize-space(text()='Invoices')]
+2019-06-03 11:15:58 INFO  AccountSettingsPage:246 - Clicking Menu Export Locator is:  //ul/li/a[normalize-space(text()='Export')]
+2019-06-03 11:15:59 INFO  AccountSettingsPage:246 - Clicking Menu Appearance Locator is:  //ul/li/a[normalize-space(text()='Appearance')]
+2019-06-03 11:16:01 INFO  AccountSettingsPage:246 - Clicking Menu Mail Drop Box Locator is:  //ul/li/a[normalize-space(text()='Mail Drop Box')]
+2019-06-03 11:16:02 INFO  AccountSettingsPage:246 - Clicking Menu Users Locator is:  //ul/li/a[normalize-space(text()='Users')]
+2019-06-03 11:16:06 INFO  AccountSettingsPage:246 - Clicking Menu Opportunities Locator is:  //ul/li/a[normalize-space(text()='Opportunities')]
+2019-06-03 11:16:12 INFO  AccountSettingsPage:246 - Clicking Menu Tracks Locator is:  //ul/li/a[normalize-space(text()='Tracks')]
+2019-06-03 11:35:37 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_url
+2019-06-03 11:35:37 INFO  ActionWrapper:25 - Value is: https://guneet.capsulecrm.com/login
+2019-06-03 11:36:06 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_username
+2019-06-03 11:36:06 INFO  ActionWrapper:25 - Value is: guneetgarg
+2019-06-03 11:36:06 INFO  LoginPage:32 - Entering UserName in TextBox: guneetgarg
+2019-06-03 11:36:07 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_password
+2019-06-03 11:36:07 INFO  ActionWrapper:25 - Value is: cAQbBgMNC3XiqXy
+2019-06-03 11:36:07 INFO  LoginPage:38 - Entering Password in TextBox: cAQbBgMNC3XiqXy
+2019-06-03 11:36:07 INFO  LoginPage:44 - Clicking Login Button
+2019-06-03 11:36:10 INFO  DashBoardPage:49 - Navigating to Account Setting Page
+2019-06-03 11:36:11 INFO  AccountSettingsPage:246 - Clicking Menu Account Locator is:  //ul/li/a[normalize-space(text()='Account')]
+2019-06-03 11:36:12 INFO  AccountSettingsPage:246 - Clicking Menu Invoices Locator is:  //ul/li/a[normalize-space(text()='Invoices')]
+2019-06-03 11:36:14 INFO  AccountSettingsPage:246 - Clicking Menu Export Locator is:  //ul/li/a[normalize-space(text()='Export')]
+2019-06-03 11:36:14 INFO  AccountSettingsPage:246 - Clicking Menu Appearance Locator is:  //ul/li/a[normalize-space(text()='Appearance')]
+2019-06-03 11:36:16 INFO  AccountSettingsPage:246 - Clicking Menu Mail Drop Box Locator is:  //ul/li/a[normalize-space(text()='Mail Drop Box')]
+2019-06-03 11:36:17 INFO  AccountSettingsPage:246 - Clicking Menu Users Locator is:  //ul/li/a[normalize-space(text()='Users')]
+2019-06-03 11:36:20 INFO  AccountSettingsPage:246 - Clicking Menu Opportunities Locator is:  //ul/li/a[normalize-space(text()='Opportunities')]
+2019-06-03 11:36:25 INFO  AccountSettingsPage:246 - Clicking Menu Tracks Locator is:  //ul/li/a[normalize-space(text()='Tracks')]
+2019-06-03 15:28:27 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_url
+2019-06-03 15:28:27 INFO  ActionWrapper:25 - Value is: https://guneet.capsulecrm.com/login
+2019-06-03 15:28:55 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_username
+2019-06-03 15:28:55 INFO  ActionWrapper:25 - Value is: guneetgarg
+2019-06-03 15:28:55 INFO  LoginPage:32 - Entering UserName in TextBox: guneetgarg
+2019-06-03 15:28:55 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_password
+2019-06-03 15:28:55 INFO  ActionWrapper:25 - Value is: cAQbBgMNC3XiqXy
+2019-06-03 15:28:55 INFO  LoginPage:38 - Entering Password in TextBox: cAQbBgMNC3XiqXy
+2019-06-03 15:28:56 INFO  LoginPage:44 - Clicking Login Button
+2019-06-03 15:29:01 INFO  DashBoardPage:39 - Navigating to People & Organisations By clicking on top menu
+2019-06-03 15:29:05 INFO  PeopleOrganisationsPage:132 - Adding Person Detail in form
+2019-06-03 15:29:05 INFO  PeopleOrganisationsPage:90 - Entering firstname in textbox: Ellie
+2019-06-03 15:29:05 INFO  PeopleOrganisationsPage:95 - Entering last name in textbox: Holcomb
+2019-06-03 15:29:05 INFO  PeopleOrganisationsPage:104 - Entering company name in textbox: Felics LLC
+2019-06-03 15:29:05 INFO  PeopleOrganisationsPage:117 - Entering phone number in textbox: 949-273-087
+2019-06-03 15:29:05 INFO  PeopleOrganisationsPage:122 - Entering email id in textbox: ellie.holcomb@yahoo.com
+2019-06-03 15:29:09 INFO  DashBoardPage:39 - Navigating to People & Organisations By clicking on top menu
+2019-06-03 15:29:10 INFO  DashBoardPage:44 - Navigating to Cases By clicking on top menu
+2019-06-03 15:29:21 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_owner
+2019-06-03 15:29:21 INFO  ActionWrapper:25 - Value is: Guneet Garg
+2019-06-03 15:29:21 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_username
+2019-06-03 15:29:21 INFO  ActionWrapper:25 - Value is: guneetgarg
+2019-06-03 15:29:21 INFO  LoginPage:32 - Entering UserName in TextBox: guneetgarg
