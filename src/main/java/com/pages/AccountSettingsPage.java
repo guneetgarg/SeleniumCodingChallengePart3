@@ -93,7 +93,7 @@ public class AccountSettingsPage {
             e.printStackTrace();
         }
         opportunities_Name.sendKeys(person.getUsername());
-        opportunities_Description.sendKeys(person.getAddress());
+        opportunities_Description.sendKeys(person.getAddress().getAddressLine1());
         opportunities_ProbabilityOfWinning.sendKeys("1");
         opportunities_DaysUntilStale.sendKeys("1");
         opportunities_saveBtn.click();
