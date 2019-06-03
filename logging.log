@@ -250,3 +250,5 @@
 2019-06-03 10:37:55 INFO  AccountSettingsPage:235 - Clicking Menu Users Locator is:  //ul/li/a[normalize-space(text()='Users')]
 2019-06-03 10:37:57 INFO  AccountSettingsPage:235 - Clicking Menu Opportunities Locator is:  //ul/li/a[normalize-space(text()='Opportunities')]
 2019-06-03 10:38:02 INFO  AccountSettingsPage:235 - Clicking Menu Tracks Locator is:  //ul/li/a[normalize-space(text()='Tracks')]
+2019-06-03 10:43:26 INFO  ActionWrapper:15 - Reading Property File to Extract key: capsulecrm_url
+2019-06-03 10:43:26 INFO  ActionWrapper:25 - Value is: https://guneet.capsulecrm.com/login
