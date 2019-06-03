@@ -17,11 +17,11 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get(ActionWrapper.getInstance().readProprtyFile("capsulecrm_url"));
+        driver.get(ActionWrapper.readProprtyFile("capsulecrm_url"));
 
     }
 
-    @AfterSuite
+  //  @AfterSuite
     public void afterSuite() {
         if (null != driver) {
             driver.close();

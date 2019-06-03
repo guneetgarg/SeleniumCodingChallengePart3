@@ -4,77 +4,79 @@ import com.pages.*;
 import com.util.ActionWrapper;
 import com.util.BaseTest;
 import com.util.DataProviderClass;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestCase2 extends BaseTest {
 
-    ActionWrapper actionWrapper;
+    AccountSettingsPage ASP;
 
+    @Test
+    public void Scenario2() throws InterruptedException {
 
-    @Test(dataProvider = "getNewPersondata", dataProviderClass = DataProviderClass.class)
-    public void aa(String title, String firstName, String lastName, String company, String phone, String email) throws InterruptedException {
-        driver.get(actionWrapper.readProprtyFile("capsulecrm_url"));
-
-        Thread.sleep(5000);
-
+        //Login to capsulecrm
         LoginPage
                 .using(driver)
-                .setUsername(actionWrapper.readProprtyFile("capsulecrm_username"))
-                .setPassword(actionWrapper.readProprtyFile("capsulecrm_password"))
                 .login();
 
+        //Navigating to Account Setting Page
+        DashBoardPage
+                .using(driver)
+                .navigateToAccountSettingPage();
 
-        Thread.sleep(5000);
+        ASP = AccountSettingsPage
+                .using(driver);
 
-        DashBoardPage.using(driver).accountDrpDown.click();
-        Thread.sleep(5000);
-        DashBoardPage.using(driver).accountSettingsMenu.click();
+        //Validating Account Setting Header
+        Assert.assertEquals(ASP.accountSettingsPageHeader().getText(), "Account Settings", "Verify Account Setting Page Header");
 
-        AccountSettingsPage ASP = AccountSettingsPage.using(driver);
-        Assert.assertEquals(ASP.accountSettingsPageHeader().getText(), "Account Settings");
+        //Clicking Account Menu and Validating Header
+        ASP.clickMenu(AccountSettingsPageMenu.Account);
+        Assert.assertEquals(ASP.getAccountHeader(), AccountSettingsPageMenu.Account, "Verifying Accounts Header");
 
+        //Clicking Invoices Menu and Validating Header
+        ASP.clickMenu(AccountSettingsPageMenu.Invoices);
+        Assert.assertEquals(ASP.getInvoicesHeader(), AccountSettingsPageMenu.Invoices, "Verifying Invoices Header");
 
-        ASP.clickMenu(AccountSettingsPageMenu.Account).click();
-        Thread.sleep(5000);
+        //Clicking Export Menu and Validating Header
+        ASP.clickMenu(AccountSettingsPageMenu.Export);
+        Assert.assertEquals(ASP.getExportHeader(), AccountSettingsPageMenu.Export, "Verifying Export Header");
 
-        ASP.clickMenu(AccountSettingsPageMenu.Invoices).click();
-        Thread.sleep(5000);
-/*
+        //Clicking Appearance Menu and Validating Header
+        ASP.clickMenu(AccountSettingsPageMenu.Appearance);
+        Assert.assertEquals(ASP.getAppearanceHeader(), AccountSettingsPageMenu.Appearance, "Verifying Appearance Header");
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Export).click();
-        Thread.sleep(5000);
+        //Uploading image
+        ASP.uploadImageInAppearance();
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Appearance).click();
-        Thread.sleep(5000);
+        //Clicking Mail Drop Box Menu and Validating Header
+        ASP.clickMenu(AccountSettingsPageMenu.MailDropBox);
+        Assert.assertEquals(ASP.getMailDropBoxHeader(), AccountSettingsPageMenu.MailDropBox, "Verifying Mail Drop Box Header");
 
-        ASP.clickMenu(AccountSettingsPage.Menu.MailDropBox).click();
-        Thread.sleep(5000);
+        //Clicking UserMenu and Validating Header
+        ASP.clickMenu(AccountSettingsPageMenu.Users);
+        Assert.assertEquals(ASP.getUsersHeader(), AccountSettingsPageMenu.Users, "Verifying Users Header");
+        //Adding New User
+        ASP.addNewUser();
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Users).click();
-        Thread.sleep(5000);
+        ASP.clickMenu(AccountSettingsPageMenu.Opportunities);
+        ASP.opportunitiesAddNewMilestones();
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Opportunities).click();
-        Thread.sleep(5000);
+        ASP.clickMenu(AccountSettingsPageMenu.Tracks);
+        ASP.tracksAddNewTrack();
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Tracks).click();
-        Thread.sleep(5000);
+        ASP.clickMenu(AccountSettingsPageMenu.TaskCategories);
+        ASP.taskCategoriesAddNewCategory();
 
-        ASP.clickMenu(AccountSettingsPage.Menu.TaskCategories).click();
-        Thread.sleep(5000);
+        ASP.clickMenu(AccountSettingsPageMenu.CustomFields);
 
-        ASP.clickMenu(AccountSettingsPage.Menu.CustomFields).click();
-        Thread.sleep(5000);
+        ASP.clickMenu(AccountSettingsPageMenu.Tags);
+        ASP.tagsAddNewTag();
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Tags).click();
-        Thread.sleep(5000);
+        ASP.clickMenu(AccountSettingsPageMenu.Integrations);
 
-        ASP.clickMenu(AccountSettingsPage.Menu.Integrations).click();
-        Thread.sleep(5000);
-
-        ASP.clickMenu(AccountSettingsPage.Menu.Trash).click();
-
-*/
+        ASP.clickMenu(AccountSettingsPageMenu.Trash);
 
     }
 }

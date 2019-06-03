@@ -11,18 +11,6 @@ public class LoginPage {
 
     Logger logger = Logger.getLogger(LoginPage.class);
 
-
-    @FindBy(xpath = "//a[@href='/parties' and @aria-label='People & Organisations']")
-    public WebElement peopleOrganisationsMenu;
-
-    public void clickPeopleOrganisationsMenu() {
-        peopleOrganisationsMenu.click();
-    }
-
-
-
-
-
     @FindBy(id = "login:usernameDecorate:username")
     private WebElement userName;
 
@@ -41,17 +29,26 @@ public class LoginPage {
     }
 
     public LoginPage setUsername(String username) {
+        logger.info("Entering UserName in TextBox: " + username);
         this.userName.sendKeys(username);
         return this;
     }
 
     public LoginPage setPassword(String password) {
+        logger.info("Entering Password in TextBox: " + password);
         this.password.sendKeys(password);
         return this;
     }
 
-    public void login() {
+    public void loginBtn() {
+        logger.info("Clicking Login Button");
         this.loginBtn.click();
+    }
+
+    public void login() {
+        setUsername(ActionWrapper.readProprtyFile("capsulecrm_username"));
+        setPassword(ActionWrapper.readProprtyFile("capsulecrm_password"));
+        loginBtn();
     }
 
 }

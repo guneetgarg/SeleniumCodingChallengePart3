@@ -1,5 +1,6 @@
 package com.pages;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,12 +38,8 @@ public class CasePage {
     private WebElement caseTitle;
 
 
-
     @FindBy(xpath = "//div[@class='entity-details-owner']")
     private WebElement caseOwner;
-
-
-
 
     private CasePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -57,16 +54,6 @@ public class CasePage {
     }
 
 
-
-
-
-
-
-
-
-
-
-
     public void setCaseRelatesTo(String str) {
         caseRelatesTo.sendKeys(str);
         try {
@@ -74,7 +61,6 @@ public class CasePage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         caseRelatesTo.sendKeys(Keys.ARROW_DOWN);
         caseRelatesTo.sendKeys(Keys.ENTER);
     }
@@ -86,27 +72,37 @@ public class CasePage {
     public void clickSaveBtn() {
         saveBtn.click();
     }
-    public void setDescription(String str){
+
+    public void setDescription(String str) {
         description.sendKeys(str);
     }
 
-    public void setTag(String str){
+    public void setTag(String str) {
         tag.sendKeys(str);
     }
-    public void clickAddTagBtn(){
+
+    public void clickAddTagBtn() {
         addTagBtn.click();
     }
 
-    public String getCaseStatus(){
-       return caseStatus.getText();
+    public String getCaseStatus() {
+        return caseStatus.getText();
     }
 
-    public String getCaseTitle(){
-        return  caseTitle.getText();
+    public String getCaseTitle() {
+        return caseTitle.getText();
     }
 
-    public String getCaseOwner(){
+    public String getCaseOwner() {
         return caseOwner.getText();
     }
 
+    public void addNewCase(String name) {
+        setCaseRelatesTo(name);
+        setName("test lost cartest");
+        setDescription("test");
+        setTag(RandomStringUtils.randomAlphabetic(10));
+        clickAddTagBtn();
+        clickSaveBtn();
+    }
 }
